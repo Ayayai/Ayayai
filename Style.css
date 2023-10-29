@@ -97,9 +97,9 @@ footer {
     position: fixed; /* or absolute/relative depending on your needs */
     text-shadow: none;
     left: 140px; /* adjust as needed */
-    top: 11%; /* adjust as needed */
+    top: 12%; /* adjust as needed */
     transform: translateY(-50%); /* to vertically center the text */
-    font-size: 2em; /* adjust as needed */
+    font-size: 2.3em; /* adjust as needed */
     background: linear-gradient(to bottom right, #ee0b40, #ac09ec 55%, #ac09ec 55%, #ce3a5d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
