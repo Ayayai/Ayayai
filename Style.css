@@ -1,69 +1,96 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom left, #e26d89, #d184f0 55%, #d184f0 55%, #e26d89);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    min-height: 100vh; /* Minimum height to be the full viewport */
-    display: flex; /* Body becomes a flex container */
-    flex-direction: column; /* Stack children of body vertically */
+    background: linear-gradient(to bottom left, #e26d89, #d184f0 55%, #d184f0 55%, #e26d89);
+    min-height: 100vh;
     color: white;
     text-shadow: 0 0 10px black;
-    flex: 1;
-    
-    flex-direction: column;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-nav {
     display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 0.5em;
-    position: relative; /* Add this line */
+    flex-direction: column;
+    scroll-snap-type: x mandatory;
+}
+html, body {
+    height: 100%; /* Ensure full height */
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 0.5em 1em;
+.container{
+    width: 16rem;
+    height: 16rem;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
+
+.container div{
+    min-width:16rem;
+    display: flex;
+    height: 100%; 
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    color: rgba(255, 255, 255, 0);
+    scroll-snap-align: center; 
+
+}
+
 
 main {
     padding: 1em;
-    flex: 1; /* Allows main content to grow and occupy any available space */
-    display: flex; /* Make the main section a flex container */
-    flex-direction: column; /* Arrange children in a column */
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-}
-
-.centre {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    flex: 1;
-  }
+    margin-bottom: 130px; 
+}
+
+footer {
+    text-align: left;
+    margin-left: 0px;  /* Adjust as necessary */
+    margin-bottom: 20px;
+    display: block;  /* Use block to ensure full width */
+}
 
 .footer_paragraph {
-    text-align: left;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline;  /* Keep as inline for text flow */
+    margin-left: 110rem;  /* Remove left margin */
 }
 
-
-header, nav, footer {
-    flex-shrink: 0; /* Do not allow these sections to shrink */
+.image-container {
+    position: fixed;
+    top: 20px;
+    left: 35px;
+    z-index: 10;
 }
+
+.image-container img {
+    width: 100px;
+    height: auto;
+}
+.container::-webkit-scrollbar {
+    height: 13px;
+  }
+  
+  .container::-webkit-scrollbar-track {
+    background: #f1f1f100; /* color of the tracking area */
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: #d25df0; /* color of the scroll thumb */
+    border-radius: 15px; /* roundness of the scroll thumb */
+    border: 10px solid #521f8d00; /* creates padding around scroll thumb */
+  }
+
