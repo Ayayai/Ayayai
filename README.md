@@ -1,2 +1,2 @@
-# https---github.com-Ayayai-Ayayai
+# Ayayai
 Website for personal use
