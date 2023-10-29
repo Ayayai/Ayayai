@@ -89,9 +89,8 @@ footer {
   }
   
   .container::-webkit-scrollbar-thumb {
-    background-color: #d25df0; /* color of the scroll thumb */
+    background-color: #383635;
     border-radius: 15px; /* roundness of the scroll thumb */
-    border: 10px solid #521f8d00; /* creates padding around scroll thumb */
   }
 
   .logo {
@@ -101,7 +100,7 @@ footer {
     top: 11%; /* adjust as needed */
     transform: translateY(-50%); /* to vertically center the text */
     font-size: 2em; /* adjust as needed */
-    background: linear-gradient(to bottom left, #ee0b40, #ac09ec 55%, #ac09ec 55%, #ce3a5d);
+    background: linear-gradient(to bottom right, #ee0b40, #ac09ec 55%, #ac09ec 55%, #ce3a5d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
