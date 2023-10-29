@@ -23,8 +23,8 @@ html, body {
 }
 
 .container{
-    width: 16rem;
-    height: 16rem;
+    width: 13rem;
+    height: 10rem;
     background: rgba(255, 255, 255, 0);
     display: flex;
     overflow-x: auto;
@@ -38,7 +38,7 @@ html, body {
     height: 100%; 
     justify-content: center;
     align-items: center;
-    font-size: 10rem;
+    font-size: 3rem;
     color: rgba(255, 255, 255, 0);
     scroll-snap-align: center; 
 
@@ -66,7 +66,7 @@ footer {
     font-size: 13px;
     cursor: pointer;
     display: inline;  /* Keep as inline for text flow */
-    margin-left: 110rem;  /* Remove left margin */
+    margin-left: 103rem;  /* Remove left margin */
 }
 
 .image-container {
@@ -94,3 +94,15 @@ footer {
     border: 10px solid #521f8d00; /* creates padding around scroll thumb */
   }
 
+  .logo {
+    position: fixed; /* or absolute/relative depending on your needs */
+    text-shadow: none;
+    left: 140px; /* adjust as needed */
+    top: 11%; /* adjust as needed */
+    transform: translateY(-50%); /* to vertically center the text */
+    font-size: 2em; /* adjust as needed */
+    background: linear-gradient(to bottom left, #ee0b40, #ac09ec 55%, #ac09ec 55%, #ce3a5d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
