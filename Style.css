@@ -93,15 +93,30 @@ footer {
     border-radius: 15px; /* roundness of the scroll thumb */
   }
 
-  .logo {
-    position: fixed; /* or absolute/relative depending on your needs */
+  /* .logo {
+    position: fixed; 
     text-shadow: none;
-    left: 140px; /* adjust as needed */
-    top: 12%; /* adjust as needed */
-    transform: translateY(-50%); /* to vertically center the text */
-    font-size: 2.3em; /* adjust as needed */
-    background: linear-gradient(to bottom right, #ee0b40, #ac09ec 55%, #ac09ec 55%, #ce3a5d);
+    left: 140px; 
+    top: 12%; 
+    transform: translateY(-50%); 
+    font-size: 2.3em; 
+    background: linear-gradient(to bottom right, #361a21, #ac09ec 55%, #ac09ec 55%, #ce3a5d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+} */
+
+.logo {
+    position: fixed;
+    text-shadow: none;
+    left: 140px;
+    top: 12%;
+    transform: translateY(-50%);
+    font-size: 2.3em;
+    background: linear-gradient(to bottom right, #361a21, #ac09ec 55%, #ac09ec 55%, #ce3a5d);
+    -webkit-background-clip: text;
+    color: transparent; 
+    letter-spacing: 5px;
 }
+
+
+
